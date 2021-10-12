@@ -262,7 +262,7 @@ module.exports = async () => {
   const { GITHUB_WORKSPACE } = process.env;
   // read a file from the workspace
   const file = fs.readFileSync(
-    `${GITHUB_WORKSPACE}/codeql-analysis.yml`,
+    `${GITHUB_WORKSPACE}/.github/workflows/codeql-analysis.yml`,
     "utf8"
   );
 
